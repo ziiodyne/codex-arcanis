@@ -45,7 +45,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 
-![Video Walkthrough](https://github.com/ziiodyne/codex-arcanis/raw/main/public/web102-project-two.gif)
+![Video Walkthrough](https://github.com/ziiodyne/codex-arcanis/raw/main/codex-arcanis/public/web102-project-two.gif)
 
 GIF created with ScreenToGif
 
