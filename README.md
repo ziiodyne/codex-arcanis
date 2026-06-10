@@ -2,7 +2,7 @@
 
 Submitted by: **Ziona Agyemang**
 
-This web app: **A Dungeons & Dragons lore flashcard study app with a dark arcane spellbook aesthetic. Users flip through 20 cards spanning five categories (monsters, spells, deities, planes, and legendary items), each posing a question on the front and revealing detailed official D&D lore on the back. A flip animation reveals the answer, and a next button draws a random card so the deck is never studied in the same order twice.**
+This web app: **A Dungeons & Dragons lore flashcard study app with a dark arcane spellbook aesthetic. Users flip through 20 cards spanning five categories (monsters, spells, deities, planes, and le[...]
 
 Time spent: **7** hours spent in total
 
@@ -45,13 +45,13 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 
-![Video Walkthrough](public/web102-project-two.gif)
+![Video Walkthrough](https://github.com/ziiodyne/codex-arcanis/raw/main/public/web102-project-two.gif)
 
 GIF created with ScreenToGif
 
 ## Notes
 
-The trickiest required feature was making sure the next button never lands on the card that is currently showing, since the assignment specifically requires the next card to be chosen at random rather than in sequence. I used a small while loop that keeps rerolling the random index until it differs from the current one. The 3D flip animation also took some iteration: getting the front and back faces to sit on top of each other correctly required setting transform-style to preserve-3d on the inner wrapper and backface-visibility to hidden on each face, then rotating the back face 180 degrees so it reads right-side up when flipped.
+The trickiest required feature was making sure the next button never lands on the card that is currently showing, since the assignment specifically requires the next card to be chosen at random ra[...]
 
 ## License
 
