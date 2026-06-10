@@ -1,0 +1,110 @@
+.scene {
+  width: 100%;
+  max-width: 480px;
+  height: 260px;
+  margin: 0 auto;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.front {
+  background: linear-gradient(145deg, var(--vellum-mid) 0%, #1e1508 100%);
+  border: 1px solid rgba(107, 79, 160, 0.5);
+}
+
+.back {
+  background: linear-gradient(145deg, #1a0f1f 0%, #120a0a 100%);
+  border: 1px solid rgba(201, 146, 10, 0.4);
+  transform: rotateY(180deg);
+}
+
+.front::before, .back::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.front::before { border: 1px solid rgba(107, 79, 160, 0.15); }
+.back::before  { border: 1px solid rgba(201, 146, 10, 0.12); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+  align-self: flex-start;
+}
+
+.badgeMonster { background: rgba(139,26,26,0.3);  color: #e07070; border: 1px solid rgba(139,26,26,0.5); }
+.badgeSpell   { background: rgba(107,79,160,0.3); color: #b39ddb; border: 1px solid rgba(107,79,160,0.5); }
+.badgeDeity   { background: rgba(201,146,10,0.2); color: #e8b84b; border: 1px solid rgba(201,146,10,0.4); }
+.badgePlane   { background: rgba(45,74,45,0.3);   color: #8bc47a; border: 1px solid rgba(45,74,45,0.6); }
+.badgeItem    { background: rgba(30,60,90,0.3);   color: #7ab0d4; border: 1px solid rgba(30,60,90,0.6); }
+
+.question {
+  font-family: var(--font-display);
+  font-size: clamp(0.78rem, 2vw, 1rem);
+  color: var(--parchment);
+  line-height: 1.45;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.answerLabel {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  font-family: var(--font-italic);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--parchment-mid);
+  line-height: 1.6;
+  flex: 1;
+  font-style: italic;
+  overflow-y: auto;
+}
+
+.hint {
+  font-size: 9px;
+  color: rgba(201, 169, 110, 0.3);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}

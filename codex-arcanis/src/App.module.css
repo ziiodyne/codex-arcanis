@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  padding: 1rem 1rem 3rem;
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(107, 79, 160, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 80%, rgba(139, 26, 26, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app > * {
+  position: relative;
+  z-index: 1;
+}

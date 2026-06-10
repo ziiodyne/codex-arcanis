@@ -1,0 +1,40 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 1.25rem;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.iconBtn:hover { opacity: 0.75; }
+.iconBtn:active { transform: scale(0.92); }
+
+.iconBtn i { font-size: 22px; }
+
+.iconBtn span {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.flip i { color: var(--arcane-glow); }
+.flip span { color: rgba(179, 157, 219, 0.6); }
+
+.next i { color: var(--gold-light); }
+.next span { color: rgba(232, 184, 75, 0.6); }
+
+.shuffle i { color: #e07070; }
+.shuffle span { color: rgba(224, 112, 112, 0.6); }

@@ -1,0 +1,39 @@
+:root {
+  --ink: #0d0a06;
+  --parchment: #f0e6cc;
+  --parchment-dark: #c9a96e;
+  --parchment-mid: #dcc89a;
+  --arcane: #6b4fa0;
+  --arcane-light: #9b7fd4;
+  --arcane-glow: #b39ddb;
+  --blood: #8b1a1a;
+  --gold: #c9920a;
+  --gold-light: #e8b84b;
+  --moss: #2d4a2d;
+  --vellum: #1a1208;
+  --vellum-mid: #2a1f10;
+
+  --font-display: 'Cinzel Decorative', serif;
+  --font-body: 'Josefin Sans', sans-serif;
+  --font-italic: 'Crimson Pro', serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #0d0a06;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
