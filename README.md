@@ -2,7 +2,7 @@
 
 Submitted by: **Ziona Agyemang**
 
-This web app: **A Dungeons & Dragons lore flashcard study app with a dark arcane spellbook aesthetic. Users flip through 20 cards spanning five categories (monsters, spells, deities, planes, and le[...]
+This web app: **A Dungeons & Dragons lore flashcard study app with a dark arcane spellbook aesthetic. Users flip through 20 cards spanning five categories (monsters, spells, deities, planes, and legendary items), each posing a question on the front and revealing detailed official D&D lore on the back. A flip animation reveals the answer, and a next button draws a random card so the deck is never studied in the same order twice.**
 
 Time spent: **7** hours spent in total
 
